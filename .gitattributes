@@ -1,0 +1,8 @@
+# Large or generated files: no text diffs or merges
+*.step binary
+*.stp binary
+*.wrl binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary

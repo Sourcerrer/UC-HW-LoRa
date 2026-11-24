@@ -1,0 +1,24 @@
+# KiCad backups, caches and lock files
+*-backups/
+*.kicad_prl
+*.lck
+~*.lck
+fp-info-cache
+*.bak
+*-bak
+_autosave-*
+\#auto_saved_files#
+
+# Generated fab outputs: regenerate with the jobset, zip into the GitHub release
+fab/
+
+# Python, editors, OS
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
