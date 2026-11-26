@@ -2,5 +2,6 @@
 
 - **Per board:** generated from KiCad (symbol fields MPN, Manufacturer, MPN_Alt, LCSC, Notes) by the jobset, one CSV per board and per build (standard, and with optional parts fitted). Not-fitted parts carry KiCad's DNP flag.
 - **Module BOM:** `module-bom.csv`, hand-kept: the boards plus housing, fixings, labels and packaging.
+- **Draft BOM (before the schematics):** `draft-bom.csv` — part numbers, manufacturers, quantities and descriptions for supplier quotes; no prices (quotes go into `prices.csv`). The top block repeats the critical high-value lines (same Item numbers, "Why critical" column) so they can be quoted first; the full list follows below it. Sources, stock and estimated values: umbrella repo `docs/arch/docs/research/R34_LoRa_Draft_BOM.md`. Replaced by the KiCad-generated BOMs once the schematics exist.
 - **Prices:** `prices.csv`, keyed by MPN, in INR at 100 units, with source and date. Relays and fuses only from the owner's quotes; everything unquoted is marked ESTIMATE.
 - The module total is checked against its PRD cost target, and it replaces the estimate lines for this module in the umbrella's `build_architecture.py`.

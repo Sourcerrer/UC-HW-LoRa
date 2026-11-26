@@ -1,6 +1,6 @@
 # UC-HW-LoRa — LoRa module hardware
 
-The LoRa module: STM32WLE5 remote IO node (RS-485, 4 DI, 4 AI, 4 DO) with a 16 MB NOR for its own OTA and logging, in the 45 mm housing.
+The LoRa module: STM32WLE5 remote IO node (RS-485, 6 DI, 4 AI, 4 DO) with a 16 MB NOR for its own OTA and logging, in the 45 mm housing.
 
 This repo holds its schematics, PCBs, bill of materials, mechanical CAD and production guidelines. Requirements live in the umbrella repo `Universal-Controller_Hardware`, in `docs/arch/docs/01_Requirements_PRD.md` (LORA-1 to LORA-7); the shared interfaces (stack bus, 4G UART link, battery socket, power stage, enclosure family) in `docs/arch/docs/02_Specifications.md`.
 
